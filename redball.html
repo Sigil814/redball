@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="stylesheet" href="alert function.css">
+  <script type="text/javascript" src="https://storage.googleapis.com/ics-redball/redball.js"></script>
+  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js"></script>
+  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.7.2/jquery-ui.min.js"></script>
+
+
+  <script type="text/javascript">
+    function myFunction() {
+      alert("Hello! I am an alert box!");
+    }
+
+    function left() {
+      redball.left = redball.left - 5;
+
+    }
+
+    function uptop() {
+      redball.top = redball.top - 5;
+
+    }
+
+
+    function right() {
+      redball.left = redball.left + 5;
+
+    }
+
+    function down() {
+      redball.top = redball.top + 5;
+
+    }
+
+    function rightdown() {
+      redball.top = redball.top + 5;
+      redball.left = redball.left + 5;
+
+    }
+
+    function uptopright() {
+      redball.top = redball.top - 5;
+      redball.left = redball.left + 5;
+
+    }
+
+    function uptopleft() {
+      redball.top = redball.top - 5;
+      redball.left = redball.left - 5;
+
+    }
+
+    function leftdown() {
+      redball.left = redball.left - 5;
+      redball.top = redball.top + 5;
+    }
+
+    function square() {
+      for (i = 0; i < 5; i++) {
+        redball.left = redball.left + 15;
+      }
+      for (i = 0; i < 5; i++) {
+        redball.top = redball.top + 15;
+      }
+      for (i = 0; i < 5; i++) {
+        redball.left = redball.left - 15;
+      }
+      for (i = 0; i < 5; i++) {
+        redball.top = redball.top - 10;
+      }
+    }
+
+    function triangle() {
+      for (i = 0; i < 15; i++) {
+        redball.top = redball.top + 5;
+        redball.left = redball.left + 5;
+      }
+      for (i = 0; i < 15; i++) {
+        redball.left = redball.left - 5;
+      }
+      for (i = 0; i < 15; i++) {
+        redball.top = redball.top - 5;
+      }
+    }
+
+    function octagon() {
+      for (i = 0; i < 15; i++) {
+        redball.left = redball.left + 5;
+      }
+      for (i = 0; i < 15; i++) {
+        redball.top = redball.top + 5;
+        redball.left = redball.left + 5;
+      }
+      for (i = 0; i < 15; i++) {
+        redball.top = redball.top + 5;
+      }
+      for (i = 0; i < 15; i++) {
+        redball.left = redball.left - 5;
+        redball.top = redball.top + 5;
+      }
+      for (i = 0; i < 15; i++) {
+        redball.left = redball.left - 5;
+      }
+      for (i = 0; i < 15; i++) {
+        redball.left = redball.left - 5;
+        redball.top = redball.top - 5;
+      }
+      for (i = 0; i < 15; i++) {
+        uptop();
+      }
+      for (i = 0; i < 15; i++) {
+        uptopright();
+      }
+    
+  }
+  </script>
+</head>
+
+<body>
+
+
+<button onclick="right()">Right</button>
+
+  <button onclick="down()">Down</button>
+
+  <button onclick="uptop()">Top</button>
+
+  <button onclick="left()">Left</button>
+
+  <button onclick="rightdown()">Right D</button>
+
+  <button onclick="leftdown()">Left D</button>
+
+  <button onclick="uptopright()">Uptop R</button>
+
+  <button onclick="uptopleft()">Uptop L</button>
+
+  <button onclick="square()">Square</button>
+
+  <button onclick="triangle()">Triangle</button>
+
+  <button onclick="octagon()">Octagon</button>
+
+  <p>Click the button to display an alert box.</p>
+
+  <button onclick="myFunction()">Try it</button>
+
+
+
+  <img id="redball" src="http://storage.googleapis.com/ics-redball/redball.jpg">
+
+</body>
+
+
+</html>
