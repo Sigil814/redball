@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js"></script>
+  <script>
+$(document).ready(function(){
+    $("#hide").click(function(){
+        $("p").hide();
+    });
+    $("#show").click(function(){
+        $("p").show();
+    });
+});
+
+</script>
+<script>
+$(document).ready(function(){
+    $("#button").click(function(){
+        $("img").animate({left: '+=250px'});
+    });
+});
+</script>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <h1>Hello</h1>
+
+    <p> Every one has that one person</p>
+
+  <br>
+
+    <p>that wont stop</p>
+
+    <ul>
+      <li>ha</li>
+      <li>ha</li>
+      <li>ha</li>
+
+    </ul>
+    <button id="hide"onclick="" name="button">Hide</button>
+    <button id="show" onclick="" name="button">Show</button>
+    <button id="button"onclick="" name="button">move</button>
+    <br>
+
+        <img style="position: absolute;" src="http://media2.giphy.com/media/QH2eLmBDsFoME/giphy.gif" alt="">
+  </body>
+</html>
